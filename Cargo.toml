@@ -1,0 +1,19 @@
+[package]
+name = "ethers-rs-examples"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ethers = { features = ["abigen", "ipc", "rustls", "ws"] }
+eyre = "0.6.12"
+tokio = { features = ["macros", "rt-multi-thread"] }
+serde = "1.0"
+serde_json = "1.0"
+
+[[example]]
+name = "uniswap_v3"
+path = "src/uniswap_v3.rs"
+
+[[example]]
+name = "erc20"
+path = "src/erc20.rs"
